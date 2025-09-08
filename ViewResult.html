@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+<title>De-Anonymize Bitcoin</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="4" color="blue">A Supervised Machine Learning Approach to De-Anonymizing the Bitcoin Blockchain</font></center>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+		<ul><center>
+		<li><a href="{% url 'LoadDataset' %}">Load & Process Dataset</a></li>
+	  <li><a href="{% url 'TrainML' %}">Train ML Algorithms</a></li>
+	   <li><a href="{% url 'Predict' %}">De-Anonymize Transaction</a></li>
+	   <li><a href="{% url 'index' %}">Logout</a></li>		
+		</center></ul>
+		<br class="clearfix" />
+	</div>
+	<div id="splash">
+		<img class="pic" src="{% static 'images/investor.jpg' %}" width="870" height="230" alt="" />
+	</div>
+	<br/>
+	 <font size="" color="black"><center>{{ data|safe }}</center></font><br/>
+		<img src="data:image/png;base64, {{ img }}" alt="graph" />
+<br/><br/>
+</body>
+</html>
+</p>
+</body>
+</html>
